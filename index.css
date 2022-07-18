@@ -1,7 +1,6 @@
 body {
   margin: 0px;
   font-family: sans-serif;
-  overflow: hidden;
 }
 
 #headerSection {
@@ -12,6 +11,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 #headerSection .logo {
@@ -51,6 +51,55 @@ body {
           align-items: center;
   margin-right: 1.5%;
   gap: 10px;
+}
+
+#headerSection .user .userhover {
+  position: absolute;
+  border: 1px solid;
+  top: 80px;
+  right: 20px;
+  background-color: white;
+  height: 300px;
+  width: 300px;
+}
+
+#headerSection .user .userhover .userimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+#headerSection .user .userhover .userimg .textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+#headerSection .user .userhover .userimg .textbox .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#headerSection .user .borderbottom {
+  border-bottom: 1px solid;
+  margin: 5%;
 }
 
 #contentSecton {
@@ -104,7 +153,7 @@ body {
 }
 
 #contentSecton #sidebarSection .Menu .Dashbord .dashborditems:hover {
-  background-color: #2020c7;
+  background-color: #101085;
   padding: 10px;
 }
 
@@ -191,10 +240,126 @@ body {
   color: #6571a7;
 }
 
-#contentSecton .information .catagories .Details .Strage {
+#contentSecton .information .catagories .Storage {
   width: 100%;
   height: 100%;
-  border: 1px solid;
-  background-color: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+}
+
+#contentSecton .information .catagories .Storage .detailtable {
+  width: 50%;
+}
+
+#contentSecton .information .catagories .Storage .detailtable table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#contentSecton .information .catagories .Storage .detailtable td,
+#contentSecton .information .catagories .Storage .detailtable th {
+  text-align: left;
+  padding: 11px;
+}
+
+#contentSecton .information .catagories .Storage .detailtable tr:nth-child(odd) {
+  background-color: #eeefef;
+}
+
+#contentSecton .information .catagories .Storage .workstation-links {
+  width: 50%;
+}
+
+#contentSecton .information .catagories .Storage .workstation-links table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#contentSecton .information .catagories .Storage .workstation-links td {
+  text-align: left;
+  padding: 12px;
+}
+
+#contentSecton .information .catagories .Storage .workstation-links td a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tableEnd {
+  padding-top: 60px;
+}
+
+.tableEnd table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tableEnd td,
+.tableEnd th {
+  text-align: left;
+  padding: 11px;
+}
+
+.tableEnd tr:nth-child(odd) {
+  background-color: #eeefef;
+}
+
+@media only screen and (max-width: 700px) {
+  #headerSection .logo {
+    display: none;
+  }
+  #contentSecton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contentSecton #sidebarSection {
+    width: 100%;
+  }
+  #contentSecton .information .catagories {
+    width: 100%;
+  }
+  #contentSecton .information .catagories .intro {
+    display: none;
+  }
+  #contentSecton .information .catagories .Details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contentSecton .information .catagories .Storage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contentSecton .information .catagories .Storage .detailtable {
+    width: 100%;
+  }
+  #contentSecton .information .catagories .Storage .detailtable .tableone {
+    width: 100%;
+    background-color: orange;
+  }
+  #contentSecton .information .catagories .Storage .detailtable .tableone td,
+  #contentSecton .information .catagories .Storage .detailtable .tableone th {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=index.css.map */
