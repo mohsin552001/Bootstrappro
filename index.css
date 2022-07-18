@@ -4,6 +4,7 @@ body {
 }
 
 #headerSection {
+  cursor: pointer;
   height: 80px;
   width: 100%;
   border-bottom: 1px solid;
@@ -56,11 +57,16 @@ body {
 #headerSection .user .userhover {
   position: absolute;
   border: 1px solid;
-  top: 80px;
+  border-color: #eeefef;
+  top: 70px;
   right: 20px;
   background-color: white;
-  height: 300px;
+  height: 350px;
   width: 300px;
+  -webkit-box-shadow: 0px 0px 5px #ccc;
+          box-shadow: 0px 0px 5px #ccc;
+  display: none;
+  cursor: pointer;
 }
 
 #headerSection .user .userhover .userimg {
@@ -97,9 +103,30 @@ body {
   display: flex;
 }
 
+#headerSection .user .userhover .infoAboutProfile .info {
+  padding-left: 15px;
+  padding-top: 8px;
+  color: #272a37;
+}
+
+#headerSection .user .userhover .infoAboutProfile .info:hover {
+  color: #e4661b;
+}
+
+#headerSection .user .userhover .bottom {
+  border-bottom: 1px solid;
+  color: #eeefef;
+  margin-top: 15px;
+}
+
 #headerSection .user .borderbottom {
   border-bottom: 1px solid;
+  color: #eeefef;
   margin: 5%;
+}
+
+#headerSection .user:hover .userhover {
+  display: block;
 }
 
 #contentSecton {
@@ -251,6 +278,7 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 30px;
+  cursor: pointer;
 }
 
 #contentSecton .information .catagories .Storage .detailtable {
@@ -325,6 +353,7 @@ body {
   }
   #contentSecton #sidebarSection {
     width: 100%;
+    cursor: pointer;
   }
   #contentSecton .information .catagories {
     width: 100%;
