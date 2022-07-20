@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 
@@ -35,13 +37,22 @@
                 <div class="borderbottom"></div>
 
                 <div class="infoAboutProfile">
-                    <div class="info">Profile </div>
-                    <div class="info">Prefrences</div>
-                    <div class="info">Send Feedback</div>
-                    <div class="info">Help & Feedback</div>
+                    <div class="info">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        Profile
+                    </div>
+                    <div class="info"><i class="fa fa-sliders" aria-hidden="true"></i>
+                        Prefrences</div>
+                    <div class="info"> <i class="fa fa-file-text" aria-hidden="true"></i>
+
+                        Send Feedback</div>
+                    <div class="info"><i class="fa fa-question-circle" aria-hidden="true"></i>
+
+                        Help & Feedback</div>
                     <div class=" bottom"></div>
 
-                    <div class="info">Logout</div>
+                    <div class="info"> <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        Logout</div>
                 </div>
             </div>
 
@@ -60,7 +71,7 @@
                 <div class="Dashbord">
                     <div class="dashborditems"><i class="fa fa-history" aria-hidden="true"></i>
                         Dashbord</div>
-                    <div class="dashborditems"><i class="fa  fa-television" aria-hidden="true"></i>Computer
+                    <div class="dashborditems computer"><i class="fa  fa-television" aria-hidden="true"></i>Computer
                     </div>
                     <div class="dashborditems"> <i class="fa fa-database" aria-hidden="true"></i>
                         Storage</div>
@@ -109,86 +120,192 @@
                 <div class="intro">
                     <div class="colmn"> Name</div>
                     <div class="colmn">CPU,Memory</div>
-                    <div class="colmn">GPU</div>
-                    <div class="colmn">IP</div>
-                    <div class="colmn">Status</div>
-                    <div class="colmn">Uptime</div>
-                    <div class="colmn">Cost per hour</div>
-                    <div class="colmn">Region</div>
-                    <!-- <div class="colmn">...</div> -->
+                    <div class="colmn select">GPU</div>
+                    <div class="colmn select">IP</div>
+                    <div class="colmn select">Status</div>
+                    <div class="colmn select">Uptime</div>
+                    <div class="colmn ">Cost per hour</div>
+                    <div class="colmn region">Region</div>
+                    <div class="colmn"></div>
 
 
 
                 </div>
+                <div class="openCloseContent">
+                    <div class="colmnblockone">
+                        <i class="fa  fa-chevron-circle-right" aria-hidden="true"></i>
+                        <div class="colmn"> Name</div>
+                        <div class="responsivename">BERT Training</div>
+                        <div class="colmn">CPU,Memory</div>
+                        <div class="responsivename">16 vCPU, 256 GB RAM</div>
+                        <div class="colmn select">GPU</div>
+                        <div class="responsivename"> A100 2X</div>
+                        <div class="colmn select">IP</div>
+                        <div class="responsivename">234.45.10.2</div>
+                        <div class="colmn select">Status</div>
+                        <div class="responsivename">Running</div>
+                        <div class="colmn select">Uptime</div>
 
-                <div class="Details">
 
-                    <div class="colmn"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                        <div class="responsivename">16 hours</div>
+                        <div class="colmn ">Cost per hour</div>
+                        <div class="responsivename">$2.45</div>
+                        <div class="colmn region">Region</div>
+                        <div class="responsivename"> EWR</div>
+                        <div class="colmn"></div>
 
 
-                        BERT Training
+
                     </div>
-                    <div class="colmn">16 vCPU, 256 GB RAM</div>
-                    <div class="colmn">
-                        A100 2X</div>
-                    <div class="colmn"><i class="fa  fa-solid fa-copy" aria-hidden="true"></i>234.45.10.2</div>
-                    <div class="colmn">Running</div>
-                    <div class="colmn">16 hours</div>
-                    <div class="colmn">
-                        $2.45</div>
-                    <div class="colmn">
-                        EWR</div>
-                    <div class="colmn">...</div>
+                    <div class="Details">
+
+                        <div class="colmn"><i class="fa  fa-chevron-circle-right" aria-hidden="true"></i>
+
+
+                            BERT Training
+                        </div>
+                        <div class="colmn">16 vCPU, 256 GB </div>
+                        <div class="colmn">
+                            A100 2X</div>
+                        <div class="colmn"><i class="fa  fa-solid fa-copy" aria-hidden="true"></i>234.45.10.2</div>
+                        <div class="colmn">Running</div>
+                        <div class="colmn">16 hours</div>
+                        <div class="colmn">
+                            $2.45</div>
+                        <div class="colmn">
+                            EWR</div>
+                        <div class="colmn startthing">...
+                            <div class="starter">
+                                <div class="text">Start</div>
+                                <div class="stop">Stop</div>
+                                <div class="stop">Restart</div>
+                                <div class="text">Teminate</div>
+                                <div class="text">Save temp</div>
+                                <div class="text">Edit</div>
+                            </div>
+                        </div>
 
 
 
 
-                </div>
-
-                <div class="Details">
-
-                    <div class="colmn"><i class="fa faarrow fa-chevron-circle-right" aria-hidden="true"></i>
-
-                        BERT Training
                     </div>
-                    <div class="colmn">16 vCPU, 256 GB RAM</div>
-                    <div class="colmn">
-                        A100 2X</div>
-                    <div class="colmn"><i class="fa  fa-solid fa-copy" aria-hidden="true"></i>234.45.10.2</div>
-                    <div class="colmn">Running</div>
-                    <div class="colmn">16 hours</div>
-                    <div class="colmn">
-                        $2.45</div>
-                    <div class="colmn">
-                        EWR</div>
-                    <div class="colmn">...</div>
-
-
-
-
                 </div>
 
-                <div class="Details">
+                <div class="openCloseContent">
+                    <div class="colmnblockone">
+                        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                        <div class="colmn"> Name</div>
+                        <div class="responsivename">BERT Training</div>
+                        <div class="colmn">CPU,Memory</div>
+                        <div class="responsivename">16 vCPU, 256 GB RAM</div>
+                        <div class="colmn select">GPU</div>
+                        <div class="responsivename">A100 2X</div>
+                        <div class="colmn select">IP</div>
+                        <div class="responsivename">234.45.10.2</div>
+                        <div class="colmn select">Status</div>
+                        <div class="responsivename">Running</div>
+                        <div class="colmn select">Uptime</div>
+                        <div class="responsivename">16 hours</div>
+                        <div class="colmn ">Cost per hour</div>
+                        <div class="responsivename"> $2.45</div>
+                        <div class="colmn region">Region</div>
+                        <div class="responsivename">EWR</div>
+                        <div class="colmn"></div>
 
-                    <div class="colmn"><i class="fa faarrow fa-chevron-circle-down" aria-hidden="true"></i>
 
-                        BERT Training
+
                     </div>
-                    <div class="colmn">16 vCPU, 256 GB RAM</div>
-                    <div class="colmn">
-                        A100 2X</div>
-                    <div class="colmn"> <i class="fa fa-solid fa-copy" aria-hidden="true"></i>234.45.10.2</div>
-                    <div class="colmn">Running</div>
-                    <div class="colmn">16 hours</div>
-                    <div class="colmn">
-                        $2.45</div>
-                    <div class="colmn">
-                        EWR</div>
-                    <div class="colmn">...</div>
+                    <div class="Details">
+
+                        <div class="colmn"><i class="fa  fa-chevron-circle-right" aria-hidden="true"></i>
+
+                            BERT Training
+                        </div>
+                        <div class="colmn">16 vCPU, 256 GB</div>
+                        <div class="colmn">
+                            A100 2X</div>
+                        <div class="colmn"><i class="fa  fa-solid fa-copy" aria-hidden="true"></i>234.45.10.2</div>
+                        <div class="colmn">Running</div>
+                        <div class="colmn">16 hours</div>
+                        <div class="colmn">
+                            $2.45</div>
+                        <div class="colmn">
+                            EWR</div>
+                        <div class="colmn startthing">...
+                            <div class="starter">
+                                <div class="text">Start</div>
+                                <div class="stop">Stop</div>
+                                <div class="stop">Restart</div>
+                                <div class="text">Teminate</div>
+                                <div class="text">Save temp</div>
+                                <div class="text">Edit</div>
+                            </div>
+                        </div>
 
 
 
+
+                    </div>
                 </div>
+
+                <div class="openCloseContent">
+                    <div class="colmnblockone">
+                        <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                        <div class="colmn"> Name</div>
+                        <div class="responsivename">BERT Training</div>
+                        <div class="colmn">CPU,Memory</div>
+                        <div class="responsivename">16 vCPU, 256 GB RAM</div>
+                        <div class="colmn select">GPU</div>
+                        <div class="responsivename">A100 2X</div>
+                        <div class="colmn select">IP</div>
+                        <div class="responsivename"> 234.45.10.2
+                        </div>
+                        <div class="colmn select">Status</div>
+                        <div class="responsivename">Running</div>
+                        <div class="colmn select">Uptime</div>
+                        <div class="responsivename">16 hours</div>
+                        <div class="colmn ">Cost per hour</div>
+                        <div class="responsivename"> $2.45</div>
+                        <div class="colmn region">Region</div>
+                        <div class="responsivename">EWR</div>
+                        <div class="colmn"></div>
+
+
+
+                    </div>
+                    <div class="Details">
+
+                        <div class="colmn"><i class="fa faarrow fa-chevron-circle-down" aria-hidden="true"></i>
+
+                            BERT Training
+                        </div>
+                        <div class="colmn ">16 vCPU, 256 GB </div>
+                        <div class="colmn">
+                            A100 2X</div>
+                        <div class="colmn"> <i class="fa fa-solid fa-copy" aria-hidden="true"></i>234.45.10.2</div>
+                        <div class="colmn">Running</div>
+                        <div class="colmn">16 hours</div>
+                        <div class="colmn">
+                            $2.45</div>
+                        <div class="colmn">
+                            EWR</div>
+                        <div class="colmn startthing">...
+
+                            <div class="starter">
+                                <div class="text">Start</div>
+                                <div class="stop">Stop</div>
+                                <div class="stop">Restart</div>
+                                <div class="text">Teminate</div>
+                                <div class="text">Save temp</div>
+                                <div class="text">Edit</div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
 
                 <div class="Storage">
                     <div class="detailtable">
@@ -259,7 +376,7 @@
                                 <td>Jupyter</td>
                                 <td> <a href="
                                     : https://234.45.10.237/jupyter/lab?path=notebooks%2FIntro.ipy">
-                                        : https://234.45.10.237/jupyter/lab?path=notebooks%2FIntro.ipy</a> </td>
+                                        :https://234.45.10.237/jupyter/lab?path=notebooks%2FIntro.ipy</a> </td>
                             </tr>
                             <tr>
 
@@ -284,7 +401,7 @@
 
 
                         </table>
-                        <div>
+                        <div class="imagediv">
                             <h4>Notes</h4>
                             <p>For general testing on alpha data</p>
                             <img src="./graph.png" alt="#">

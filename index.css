@@ -1,6 +1,11 @@
 body {
   margin: 0px;
   font-family: sans-serif;
+  overflow: auto;
+}
+
+body a {
+  color: #316cbb;
 }
 
 #headerSection {
@@ -61,7 +66,7 @@ body {
   top: 70px;
   right: 20px;
   background-color: white;
-  height: 350px;
+  height: 300px;
   width: 300px;
   -webkit-box-shadow: 0px 0px 5px #ccc;
           box-shadow: 0px 0px 5px #ccc;
@@ -113,6 +118,10 @@ body {
   color: #e4661b;
 }
 
+#headerSection .user .userhover .infoAboutProfile .info .fa {
+  color: #67727f;
+}
+
 #headerSection .user .userhover .bottom {
   border-bottom: 1px solid;
   color: #eeefef;
@@ -141,9 +150,7 @@ body {
 
 #contentSecton #sidebarSection {
   width: 20.8%;
-  height: 100vh;
   background-color: #052c71;
-  border-bottom: 1px solid;
   border-color: #0033ff;
   margin: 0px;
 }
@@ -168,6 +175,15 @@ body {
 #contentSecton #sidebarSection .Menu .Dashbord {
   padding-left: 30px;
   font-weight: bold;
+}
+
+#contentSecton #sidebarSection .Menu .Dashbord .computer {
+  background-color: #101085;
+  padding-left: 5px !important;
+}
+
+#contentSecton #sidebarSection .Menu .Dashbord .computer .fa {
+  color: #e4661b;
 }
 
 #contentSecton #sidebarSection .Menu .Dashbord .dashborditems {
@@ -216,6 +232,14 @@ body {
   width: 100%;
 }
 
+#contentSecton .information .catagories .colmnblockone {
+  display: none;
+}
+
+#contentSecton .information .catagories .colmnblockone .responsivename {
+  display: none;
+}
+
 #contentSecton .information .catagories .intro {
   border: 1px solid;
   padding: 8px;
@@ -228,16 +252,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 100%;
 }
 
 #contentSecton .information .catagories .intro .colmn {
-  padding-left: 4%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  padding-left: 10px;
+  width: 20%;
 }
 
 #contentSecton .information .catagories .Details {
@@ -246,17 +266,46 @@ body {
   display: flex;
   margin-top: 8px;
   padding: 8px;
-  background-color: yellow;
+  width: 100%;
   background-color: #f0f4f7;
 }
 
+#contentSecton .information .catagories .Details .startthing:hover .starter {
+  display: block;
+}
+
 #contentSecton .information .catagories .Details .colmn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  width: 20%;
+  padding-left: 10px;
+}
+
+#contentSecton .information .catagories .Details .colmn .starter {
+  width: 150px;
+  height: 250px;
+  position: absolute;
+  right: 150px;
+  background-color: #f8fbfc;
+  -webkit-box-shadow: 0px 0px 5px #ccc;
+          box-shadow: 0px 0px 5px #ccc;
+  display: none;
+}
+
+#contentSecton .information .catagories .Details .colmn .starter .text {
+  padding: 10px;
+}
+
+#contentSecton .information .catagories .Details .colmn .starter .text:hover {
+  color: #e4661b;
+}
+
+#contentSecton .information .catagories .Details .colmn .starter .stop {
+  padding: 10px;
+  color: #ccc;
+}
+
+#contentSecton .information .catagories .Details .colmn .fa {
+  padding-right: 5%;
+  color: #959fb7;
 }
 
 #contentSecton .information .catagories .Details .colmn .faarrow {
@@ -334,11 +383,16 @@ body {
   padding: 11px;
 }
 
+.tableEnd td a,
+.tableEnd th a {
+  color: #316cbb;
+}
+
 .tableEnd tr:nth-child(odd) {
   background-color: #eeefef;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   #headerSection .logo {
     display: none;
   }
@@ -354,12 +408,68 @@ body {
   #contentSecton #sidebarSection {
     width: 100%;
     cursor: pointer;
+    height: 100%;
+  }
+  #contentSecton .information {
+    width: 90%;
   }
   #contentSecton .information .catagories {
     width: 100%;
   }
-  #contentSecton .information .catagories .intro {
+  #contentSecton .information .catagories .openCloseContent {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #contentSecton .information .catagories .openCloseContent .colmnblockone {
+    width: 50%;
+    background-color: #f0f4f7;
+    color: black;
+    border: 0px solid;
+    display: block;
+  }
+  #contentSecton .information .catagories .openCloseContent .colmnblockone .colmn {
+    padding: 10px;
+  }
+  #contentSecton .information .catagories .openCloseContent .colmnblockone .fa {
+    color: #959fb7;
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+  #contentSecton .information .catagories .openCloseContent .colmnblockone .faarrow {
+    color: #e4661b;
+  }
+  #contentSecton .information .catagories .openCloseContent .Details {
+    width: 50%;
+  }
+  #contentSecton .information .catagories .openCloseContent .Details .colmn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  #contentSecton .information .catagories .openCloseContent .Details .colmn .faarrow {
     display: none;
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+  #contentSecton .information .catagories .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+  }
+  #contentSecton .information .catagories .intro .colmn {
+    padding: 10px;
   }
   #contentSecton .information .catagories .Details {
     display: -webkit-box;
@@ -369,6 +479,19 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #contentSecton .information .catagories .Details .colmn {
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contentSecton .information .catagories .Details .colmn .fa {
+    display: none;
   }
   #contentSecton .information .catagories .Storage {
     display: -webkit-box;
@@ -384,11 +507,44 @@ body {
   }
   #contentSecton .information .catagories .Storage .detailtable .tableone {
     width: 100%;
-    background-color: orange;
+  }
+  #contentSecton .information .catagories .Storage .detailtable .tableone tr {
+    width: 100%;
+  }
+  #contentSecton .information .catagories .Storage .detailtable .tableone tr td {
+    width: 50%;
   }
   #contentSecton .information .catagories .Storage .detailtable .tableone td,
   #contentSecton .information .catagories .Storage .detailtable .tableone th {
     width: 100%;
+  }
+  #contentSecton .information .catagories .Storage .workstation-links .imagediv img {
+    width: 200%;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  #headerSection {
+    width: 70%;
+  }
+  #headerSection .user span {
+    display: none;
+  }
+  #contentSecton .information .catagories .openCloseContent .Details {
+    display: none;
+  }
+  #contentSecton .information .catagories .openCloseContent .colmnblockone {
+    width: 100%;
+  }
+  #contentSecton .information .catagories .openCloseContent .colmnblockone .fa-chevron-circle-down {
+    color: #e4661b;
+  }
+  #contentSecton .information .catagories .openCloseContent .colmnblockone .responsivename {
+    padding-left: 10px;
+    display: block;
+  }
+  #contentSecton .information .catagories .openCloseContent .colmnblockone .colmn {
+    font-weight: bold;
   }
 }
 /*# sourceMappingURL=index.css.map */
